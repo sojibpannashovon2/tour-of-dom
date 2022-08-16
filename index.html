@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+        .skill-containner li {
+            color: rgb(220, 12, 12);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Welcome to my Dom</h1>
+    </header>
+
+
+    <main id="main-container">
+
+
+        <section class="first-section">
+
+
+
+            <h1>I going to connect javascript into html </h1>
+
+            <ul class="skill-containner">
+                <li id="tool">css</li>
+                <li> bootstrap</li>
+                <li> tailwind</li>
+            </ul>
+
+        </section>
+
+        <section class="second-section" id="second-place">
+
+            <h1 id="title-name">I am enjoing it very march</h1>
+
+
+
+            <h1>I am now going to explore javascript</h1>
+
+            <ul id="another-skill">
+                <li id="order">Rahim</li>
+                <li>Borkat</li>
+                <li>Jobbar</li>
+            </ul>
+
+        </section>
+
+
+    </main>
+    <script src="js/dom.js"></script>
+
+    <script src="js/another.js"></script>
+
+
+
+
+
+
+
+    <script>
+
+        const liCollection = document.getElementsByTagName('li');
+
+        for (const li of liCollection) {
+            //console.log(li);
+        }
+
+        const tools = document.getElementById('tool');
+
+        //tools.innerText = " Css changed by script";
+
+        const total_li = document.querySelectorAll('.skill-containner li');
+        for (li of total_li) {
+            //console.log(li.innerText);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
